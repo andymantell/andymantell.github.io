@@ -1,0 +1,9 @@
+version: '2'
+services:
+  github-pages:
+    container_name: blog
+    image: "starefossen/github-pages:latest"
+    ports:
+      - "80:4000"
+    volumes:
+      - .:/usr/src/app
